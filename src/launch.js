@@ -18,8 +18,9 @@ const puppeteer = require('puppeteer');
     
     button.click();
     await page.waitForSelector('::-p-xpath(//div[@class="dropdown-content visible"])');
-
+    
     console.log('Element Text:', button);
-
+    
+   
     await browser.close();
 })();
